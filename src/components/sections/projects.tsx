@@ -17,7 +17,7 @@ const projectData: Project[] = [
     {
     name: "Proyecto Final Colaborativo",
     description: "Proyecto Final de curso desarrollado en colaboración, que culmina la aplicación de un stack completo de tecnologías. Demuestra trabajo en equipo (Git/GitHub) e integración de módulos.",
-    techStack: ["Node.js", "React", "Git", "GitHub", "TypeScript"],
+    techStack: ["Node.js", "React", "Git", "GitHub", "TypeScriptF"],
     githubRepoUrl: "https://activafitness.com.ar/",
     imageId: 'activa-fitness',
   },
@@ -51,9 +51,6 @@ export default function Projects() {
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Mi Portafolio</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Algunas cosas que he construido en mi tiempo libre.
-            </p>
           </div>
         </div>
         <div className="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
