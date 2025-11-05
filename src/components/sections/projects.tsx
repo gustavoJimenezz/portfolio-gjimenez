@@ -17,7 +17,7 @@ const projectData: Project[] = [
     {
     name: "Proyecto Final Colaborativo",
     description: "Proyecto Final de curso desarrollado en colaboración, que culmina la aplicación de un stack completo de tecnologías. Demuestra trabajo en equipo (Git/GitHub) e integración de módulos.",
-    techStack: ["Node.js", "React", "Git", "GitHub"],
+    techStack: ["Node.js", "React", "Git", "GitHub", "TypeScript"],
     githubRepoUrl: "https://activafitness.com.ar/",
     imageId: 'activa-fitness',
   },

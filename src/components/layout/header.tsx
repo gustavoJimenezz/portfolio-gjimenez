@@ -7,7 +7,7 @@ import { Button } from '@/src/components/ui/button';
 import { ThemeToggle } from '@/src/components/theme-toggle';
 
 const navItems = [
-  { href: '#about', label: 'Acerca de' },
+  { href: '#about', label: 'Sobre Mí' },
   { href: '#skills', label: 'Habilidades' },
   { href: '#experience', label: 'Experiencia' },
   { href: '#projects', label: 'Proyectos' },

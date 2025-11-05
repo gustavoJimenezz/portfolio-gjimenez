@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-screen-2xl px-4 py-12 md:py-20">
         <div className="flex flex-col items-center text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">
-            Ponte en Contacto
+            Contacto
           </h2>
           <p className="mt-4 max-w-2xl text-muted-foreground md:text-lg">
             Estoy disponible para oportunidades de freelance o para unirme a tu equipo. Si tienes un proyecto en mente, una pregunta o simplemente quieres saludar, no dudes en contactarme.

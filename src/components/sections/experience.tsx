@@ -14,12 +14,13 @@ const experienceData: Experience[] = [
     company: "Onapsis",
     period: "Abril. 2022 - Junio. 2023",
     description: [
-      "Desarrollo de Software robusto en Python, utilizando frameworks como Flask y Django.",
-      "Implementación de tests unitarios y funcionales con Pytest, adhiriendo a prácticas de TDD.",
-      "Gestión de migraciones de bases de datos y aplicación de patrones de diseño.",
-      "Despliegue y mantenimiento continuo de aplicaciones en máquinas virtuales AWS (EC2).",
-      "Administración de servicios en Linux y configuración de red (iptables).",
-      "Trabajo con metodologías Scrum y herramientas como Docker/Docker Compose."
+      "Desarrollo de software en Python con frameworks Flask y Django",
+      "Implementación de tests unitarios y funcionales con Pytest siguiendo principios de TDD",
+      "Uso de programación asíncrona (asyncio) y aplicación de patrones de diseño",
+      "Gestión de migraciones de bases de datos y automatización de procesos",
+      "Despliegue y mantenimiento de aplicaciones en AWS (EC2) con Docker y Docker Compose",
+      "Administración de servicios Linux y configuración de red mediante iptables",
+      "Trabajo bajo metodologías ágiles (Scrum) y herramientas de gestión como Jira, GitHub/GitLab y Postman"
     ]
   },
   {
