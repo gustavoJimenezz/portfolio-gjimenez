@@ -54,9 +54,6 @@ export default function Skills() {
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
               Aptitudes Técnicas
             </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Una colección de tecnologías que utilizo para dar vida a las ideas.
-            </p>
           </div>
         </div>
         <div className="mx-auto mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
