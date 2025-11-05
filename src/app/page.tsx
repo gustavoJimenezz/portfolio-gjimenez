@@ -3,6 +3,7 @@ import Footer from '@/src/components/layout/footer';
 import Hero from '@/src/components/sections/hero';
 import About from '@/src/components/sections/about';
 import Skills from '@/src/components/sections/skills';
+import Education from '@/src/components/sections/education';
 import Experience from '@/src/components/sections/experience';
 import Projects from '@/src/components/sections/projects';
 
@@ -14,6 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <About />
+        <Education />
         <Skills />
         <Experience />
         <Projects />
