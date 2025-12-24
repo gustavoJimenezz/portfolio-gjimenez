@@ -38,8 +38,8 @@ This project includes Firebase Genkit with Google GenAI integration, though the 
 ## Project Architecture
 
 ### Tech Stack
-- **Framework**: Next.js 15.3.3 with App Router and Turbopack
-- **UI Library**: React 18.3.1
+- **Framework**: Next.js 16.1.1 with App Router and Turbopack
+- **UI Library**: React 19.2.3
 - **Styling**: Tailwind CSS with shadcn/ui components
 - **Language**: TypeScript (strict mode enabled)
 - **AI Integration**: Firebase Genkit with Google GenAI (configured but not actively used)
