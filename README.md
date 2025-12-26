@@ -1,54 +1,114 @@
-Como soy una inteligencia artificial basada en texto, no puedo enviarte un archivo .md para "descargar" directamente con un botón de descarga, pero puedo generarte el contenido listo para que lo guardes tú mismo en un segundo.
+# Portfolio Personal
 
-Aquí tienes el contenido completo. Copia el bloque de abajo:
+Portfolio personal desarrollado con Next.js, React y Tailwind CSS. Aplicación moderna de una sola página con soporte para modo oscuro y diseño responsive.
 
-Markdown
+## Stack Tecnológico
 
-# Mi Proyecto Next.js
+- **Framework**: Next.js 16.1.1 (App Router + Turbopack)
+- **UI**: React 19.2.3
+- **Estilos**: Tailwind CSS + shadcn/ui
+- **Lenguaje**: TypeScript (modo estricto)
+- **Tema**: Sistema de temas con next-themes (light/dark mode)
+- **Fuentes**: Inter (texto) y Space Grotesk (títulos)
 
-Este es un proyecto de [Next.js](https://nextjs.org/) iniciado con [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Requisitos Previos
 
-## Primeros Pasos
+- Node.js (versión recomendada: 18.x o superior)
+- npm, yarn, pnpm o bun
 
-Primero, ejecuta el servidor de desarrollo:
+## Comandos de Desarrollo
+
+### Servidor de Desarrollo
 
 ```bash
 npm run dev
-# o
-yarn dev
-# o
-pnpm dev
-# o
-bun dev
-Abre http://localhost:3000 con tu navegador para ver el resultado.
+```
 
-Puedes comenzar a editar la página modificando app/page.tsx. La página se actualiza automáticamente a medida que editas el archivo.
+Inicia el servidor de desarrollo con Turbopack en [http://localhost:9002](http://localhost:9002)
 
-Este proyecto utiliza next/font para optimizar y cargar automáticamente Geist, una nueva familia de fuentes de Vercel.
+### Build de Producción
 
-Más Información
-Para conocer más sobre Next.js, echa un vistazo a los siguientes recursos:
+```bash
+npm run build
+```
 
-Documentación de Next.js: aprende sobre las funciones y la API de Next.js.
+Crea una build optimizada para producción.
 
-Aprende Next.js: un tutorial interactivo de Next.js.
+### Linting
 
-¡Puedes consultar el repositorio de Next.js en GitHub; tus comentarios y contribuciones son bienvenidos!
+```bash
+npm run lint
+```
 
-Despliegue en Vercel
-La forma más sencilla de desplegar tu aplicación de Next.js es utilizar la Plataforma Vercel, de los creadores de Next.js.
+Ejecuta ESLint para verificar el código.
 
-Consulta nuestra documentación de despliegue de Next.js para obtener más detalles.
+### Verificación de Tipos
 
+```bash
+npm run typecheck
+```
 
----
+Ejecuta TypeScript en modo no-emit para verificar errores de tipos.
 
-### Cómo crearlo en tu Ubuntu (sin virgulillas ni comandos raros):
+## Estructura del Proyecto
 
-1. En tu terminal **Terminator**, asegúrate de estar en la carpeta del proyecto.
-2. Escribe `nano README.md`.
-3. Borra todo lo que haya (si hay algo) y pega el texto de arriba.
-4. Presiona **`Ctrl + O`** para guardar y luego **`Enter`**.
-5. Presiona **`Ctrl + X`** para salir.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Layout raíz con ThemeProvider
+│   ├── page.tsx           # Página principal
+│   └── globals.css        # Estilos globales y directivas de Tailwind
+├── components/
+│   ├── layout/            # Componentes de layout (Header, Footer)
+│   ├── sections/          # Secciones de la página
+│   │   ├── hero.tsx       # Sección de presentación
+│   │   ├── about.tsx      # Sobre mí
+│   │   ├── education.tsx  # Formación académica
+│   │   ├── skills.tsx     # Habilidades técnicas
+│   │   ├── experience.tsx # Experiencia laboral
+│   │   └── projects.tsx   # Proyectos
+│   ├── ui/                # Componentes shadcn/ui
+│   ├── theme-provider.tsx # Proveedor de temas
+│   └── theme-toggle.tsx   # Selector de tema
+├── hooks/                 # Hooks personalizados de React
+└── lib/                   # Utilidades y helpers
+```
 
-**¿Quieres que te ayude a redactar una sección de "Sobre mí" o "Contacto" para que este README sea el principal de tu Portfolio?**
+## Características
+
+- Diseño responsive con enfoque mobile-first
+- Modo oscuro/claro con persistencia
+- Componentes UI reutilizables con shadcn/ui
+- Tipado estricto con TypeScript
+- Optimización de rendimiento con Turbopack
+- Animaciones y transiciones suaves
+- Fuentes optimizadas cargadas vía Google Fonts
+
+## Alias de Rutas
+
+El proyecto usa alias de TypeScript para importaciones más limpias:
+
+```typescript
+@/src/components/...  // Para componentes
+@/src/lib/...         // Para utilidades
+@/src/hooks/...       // Para hooks
+```
+
+## Despliegue
+
+La forma más sencilla de desplegar esta aplicación es usar [Vercel](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+Consulta la [documentación de despliegue de Next.js](https://nextjs.org/docs/deployment) para más opciones.
+
+## Recursos
+
+- [Documentación de Next.js](https://nextjs.org/docs)
+- [Documentación de Tailwind CSS](https://tailwindcss.com/docs)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Documentación de React](https://react.dev)
+
+## Licencia
+
+Este proyecto es de uso personal.
