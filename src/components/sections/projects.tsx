@@ -46,14 +46,15 @@ const projectData: Project[] = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full bg-secondary py-24 md:py-32">
+    <section id="projects" className="w-full border border-primary rounded-xl p-10">
       <div style={{ animationDelay: '0.4s' }} className="container animate-fade-in px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">Mi Portafolio</h2>
           </div>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+        
+        <div className="mx-auto mt-12 grid grid-cols-1 gap-8 ">
           {projectData.map((project) => {
             const projectImage = PlaceHolderImages.find(p => p.id === project.imageId);
             return (

@@ -85,10 +85,10 @@ const skillData: SkillCategory[] = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full bg-secondary border border-primary rounded-xl">
+    <section id="skills" className="w-full border border-primary rounded-xl">
       <div
         style={{ animationDelay: '0.2s' }}
-        className="container animate-fade-in p-4"
+        className="container animate-fade-in p-10"
       >
         <div className="mb-12 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-5xl">
@@ -96,7 +96,7 @@ export default function Skills() {
           </h2>
         </div>
 
-        <div className="mx-auto max-w-4xl">
+        <div className="w-full">
           <div className="divide-y divide-border/50 rounded-xl border border-border/30 bg-[hsl(var(--background))]">
             {skillData.map((category) => {
               const colors = colorClasses[category.colorTheme];
