@@ -16,6 +16,28 @@ html {
     --popover-foreground: 220 10% 10%;
     --primary: 140 70% 40%;
     --primary-foreground: 140 70% 98%;
+    
+    /* Arquitectura: Azul Acero */
+    --blue: 210 80% 50%;
+    --blue-foreground: 210 80% 98%;
+
+    /* Frontend: Cyan Glacial */
+    --cyan: 190 90% 45%;
+    --cyan-foreground: 190 90% 98%;
+
+    /* DevOps: Naranja Cobalto */
+    --orange: 25 95% 55%;
+    --orange-foreground: 25 95% 98%;
+
+    /* IA: Violeta Eléctrico */
+    --purple: 270 70% 60%;
+    --purple-foreground: 270 70% 98%;
+
+    /* Calidad: Rosa Magenta / Fucsia Soft */
+    --pink: 330 70% 55%;
+    --pink-foreground: 330 70% 98%;
+
+
     --secondary: 220 10% 85%;
     --secondary-foreground: 220 10% 10%;
     --muted: 220 10% 85%;
@@ -33,6 +55,8 @@ html {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --cyan: 180 70% 35%;
+    --purple: 270 60% 45%;
   }
 
   .dark {
@@ -60,6 +84,8 @@ html {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --cyan: 180 70% 45%;
+    --purple: 270 60% 55%;
   }
 }
 
