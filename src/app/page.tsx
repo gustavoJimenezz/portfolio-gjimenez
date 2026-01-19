@@ -12,13 +12,13 @@ export default function Home() {
     // <div className="flex min-h-screen flex-col">
     <div className="flex min-h-screen flex-col items-center">
       <Header />
-      <main className="flex-1">
+      <main className="flex flex-col gap-24 py-10">
         <Hero />
         <About />
-        <Education />
         <Skills />
         <Experience />
         <Projects />
+        <Education />
       </main>
       <Footer />
     </div>

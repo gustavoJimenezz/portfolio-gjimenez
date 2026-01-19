@@ -49,7 +49,7 @@ const educationData: EducationItem[] = [
 
 export default function Education() {
   return (
-    <section id="education" className="w-full bg-background py-24 md:py-32">
+    <section id="education" className="w-full bg-background py-8">
       <div style={{ animationDelay: '0.4s' }} className="container animate-fade-in px-4 md:px-6">
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center">

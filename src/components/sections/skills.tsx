@@ -1,6 +1,12 @@
 import { Badge } from '@/src/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/src/components/ui/card';
-import { Code, Database, Globe, Layers, Server, Settings, BrainCircuit } from 'lucide-react';
+// import { Code, Database, Globe, Layers, Server, Settings, BrainCircuit } from 'lucide-react';
+// import type { LucideIcon, Zap} from 'lucide-react';
+
+// 1. Agregamos Zap aquí (como componente)
+import { Code, Database, Globe, Layers, Server, Settings, BrainCircuit, Zap } from 'lucide-react';
+
+// 2. Aquí solo dejamos LucideIcon (como tipo)
 import type { LucideIcon } from 'lucide-react';
 
 type SkillCategory = {
@@ -11,34 +17,40 @@ type SkillCategory = {
 
 const skillData: SkillCategory[] = [
   {
-    title: 'Lenguajes & Core',
+    title: 'Backend & Core Engineering',
     icon: Code,
-    skills: ["Python (Flask, Django, asyncio)", "JavaScript (ES6+)", "TypeScript", "Java"],
+    // Agregamos Asyncio explícito y SQLAlchemy que usaste en el Hotel
+    skills: ["Python (Asyncio, Flask, Django)", "Node.js (TypeScript/Express)", "SQLAlchemy & Sequelize ORM", "Java (POO & Design Patterns)"],
   },
   {
-    title: 'Backend & APIs',
+    title: 'Arquitectura & Seguridad',
     icon: Server,
-    skills: ["Node.js", "Express", "Desarrollo de APIs REST", "Autenticación JWT", "Arquitectura MVC"],
+    // Aquí destacamos el manejo de lógica compleja y seguridad que se ve en tus proyectos
+    skills: ["Arquitecturas en Capas (DAO/MVC)", "Diseño de Base de Datos (+20 modelos)", "Seguridad (JWT, Bcrypt, OAuth2)", "Integración de Pagos (Mercado Pago SDK)"],
   },
   {
-    title: 'Frontend & Estilos',
+    title: 'Modern Frontend',
     icon: Globe,
-    skills: ["React", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"],
+    // Agregamos Astro 5 y Mobile-first que es lo que hiciste en la migración
+    skills: ["React 19", "Astro 5 (SSG/Hybrid)", "Tailwind CSS v4", "TypeScript (Interfaces & Types)", "Mobile-first Design"],
   },
   {
-    title: 'Bases de Datos & ORMs',
-    icon: Database,
-    skills: ["PostgreSQL", "MySQL", "Sequelize (ORMs, migraciones y diseño de esquemas)"],
-  },
-  {
-    title: 'DevOps & Cloud',
+    title: 'Infraestructura & DevOps',
     icon: Layers,
-    skills: ["Docker", "Docker Compose", "Git", "GitHub", "GitLab", "AWS (EC2)", "Linux (systemctl, journalctl, iptables)"],
+    // Tu manejo de Nginx y SSL es un diferencial enorme para un Junior
+    skills: ["Docker & Docker Compose", "Nginx (Proxy Reverso & SSL)", "AWS EC2 & Linux Admin", "CI/CD (GitHub Actions)", "Automatización con Bash"],
   },
   {
-    title: 'Metodologías & Prácticas',
+    title: 'IA & Eficiencia de Desarrollo',
+    icon: Zap, // Cambié el icono para resaltar velocidad/modernidad
+    // Esto te hace resaltar sobre el resto: sabes usar herramientas de IA profesionalmente
+    skills: ["Claude Code CLI (Agentic workflows)", "Prompt Engineering profesional", "Contexto persistente (CLAUDE.md)", "Documentación Automática"],
+  },
+  {
+    title: 'Calidad & Metodologías',
     icon: BrainCircuit,
-    skills: ["Scrum", "Metodologías Ágiles", "TDD (Desarrollo Guiado por Pruebas)", "Patrones de Diseño", "Programación Asíncrona"],
+    // Agregamos los conventional commits que usaste en la migración
+    skills: ["TDD (Pytest/Jest)", "Scrum", "Git (Conventional Commits)", "Clean Code", "Arquitectura dirigida por planes"],
   },
 ];
 
