@@ -83,6 +83,72 @@ src/
 - Optimización de rendimiento con Turbopack
 - Animaciones y transiciones suaves
 - Fuentes optimizadas cargadas vía Google Fonts
+- Sistema de galería de imágenes para proyectos con layouts adaptativos
+
+## Agregar Imágenes a Proyectos
+
+El sistema de proyectos soporta múltiples imágenes por proyecto con layouts automáticos basados en la cantidad de imágenes.
+
+### Paso 1: Agregar la imagen al directorio público
+
+Coloca las imágenes en la carpeta `/public/`:
+
+```
+public/
+├── mi-proyecto-1.png
+├── mi-proyecto-2.png
+└── ...
+```
+
+### Paso 2: Registrar la imagen en placeholder-images.json
+
+Abre `src/lib/placeholder-images.json` y agrega un nuevo objeto al array `placeholderImages`:
+
+```json
+{
+  "placeholderImages": [
+    {
+      "id": "mi-proyecto-screenshot",
+      "description": "Descripción de la imagen",
+      "imageUrl": "/mi-proyecto-screenshot.png",
+      "imageHint": "mi-proyecto"
+    }
+  ]
+}
+```
+
+- **id**: Identificador único para referenciar la imagen
+- **description**: Descripción accesible de la imagen
+- **imageUrl**: Ruta relativa desde `/public/`
+- **imageHint**: Hint para optimización de AI (opcional)
+
+### Paso 3: Agregar las imágenes al proyecto
+
+En `src/components/sections/projects.tsx`, actualiza el array `images` del proyecto:
+
+```typescript
+{
+  name: "Mi Proyecto",
+  description: "Descripción del proyecto",
+  techStack: ["React", "Node.js"],
+  githubRepoUrl: "https://github.com/usuario/proyecto",
+  images: [
+    { id: 'mi-proyecto-principal', caption: 'Vista principal' },
+    { id: 'mi-proyecto-detalle', caption: 'Detalle de funcionalidad' },
+    { id: 'mi-proyecto-mobile' },  // caption es opcional
+  ],
+}
+```
+
+### Layouts Automáticos
+
+El componente `ProjectGallery` ajusta automáticamente el layout según la cantidad de imágenes:
+
+| Cantidad | Layout |
+|----------|--------|
+| 1 imagen | Ocupa 100% del espacio con aspect-video |
+| 2 imágenes | Principal 2/3, secundaria 1/3 |
+| 3-5 imágenes | Grilla 3x2: principal en 2 cols x 2 rows, secundarias en columna lateral |
 
 ## Alias de Rutas
 

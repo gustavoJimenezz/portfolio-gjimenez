@@ -9,7 +9,6 @@ import Projects from '@/src/components/sections/projects';
 
 export default function Home() {
   return (
-    // <div className="flex min-h-screen flex-col">
     <div className="flex min-h-screen flex-col items-center">
       <Header />
       <main className="flex flex-col gap-24 py-10">
