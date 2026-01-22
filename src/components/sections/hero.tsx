@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="w-full animate-fade-in"
+      className="w-full animate-fade-in flex justify-center px-8"
     >
       <div className="container">
         <div className="flex gap-6 justify-between my-4 max-lg:flex-col-reverse w-full">

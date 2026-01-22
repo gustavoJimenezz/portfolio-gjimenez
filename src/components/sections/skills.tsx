@@ -85,7 +85,7 @@ const skillData: SkillCategory[] = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="w-full border border-primary rounded-xl">
+    <section id="skills" className="w-full border border-primary rounded-xl flex justify-center">
       <div
         style={{ animationDelay: '0.2s' }}
         className="container animate-fade-in p-10"

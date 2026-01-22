@@ -3,7 +3,7 @@ import { UserCircle2 } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="w-full bg-background pt-2 pb-2">
+    <section id="about" className="w-full bg-background flex justify-center px-8">
       <div className="container">
         <div className="flex max-lg:flex-col-reverse gap-8 w-full">
           <div className="w-full">
