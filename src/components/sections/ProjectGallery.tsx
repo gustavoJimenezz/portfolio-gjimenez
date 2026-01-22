@@ -33,7 +33,7 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
           height={450}
           alt={images[0].caption || projectName}
           data-ai-hint={imageData.imageHint}
-          className="aspect-video w-full object-cover transition-transform duration-300 hover:scale-105"
+          className="aspect-video w-full object-scale-down transition-transform duration-300 hover:scale-105"
         />
         {images[0].caption && (
           <p className="mt-2 text-xs text-muted-foreground">{images[0].caption}</p>
@@ -57,7 +57,7 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
               height={400}
               alt={images[0].caption || projectName}
               data-ai-hint={mainImage.imageHint}
-              className="aspect-video h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+              className="aspect-video h-full w-full object-scale-down transition-transform duration-300 hover:scale-105"
             />
           </div>
         )}
@@ -69,7 +69,7 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
               height={400}
               alt={images[1].caption || `${projectName} - 2`}
               data-ai-hint={secondImage.imageHint}
-              className="aspect-[3/4] h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+              className="aspect-[3/4] h-full w-full object-scale-down transition-transform duration-300 hover:scale-105"
             />
           </div>
         )}
@@ -86,17 +86,17 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
   }));
 
   return (
-    <div className="grid grid-cols-3 grid-rows-2 gap-1.5 sm:gap-2">
+    <div className="h-full grid grid-cols-3 grid-rows-2 gap-1.5 sm:gap-2">
       {/* Imagen principal: 2 columnas x 2 filas */}
       {mainImage && (
-        <div className="col-span-2 row-span-2 overflow-hidden rounded-lg">
+        <div className="col-span-2 row-span-2 overflow-hidden rounded-lg ">
           <Image
             src={mainImage.imageUrl}
             width={600}
             height={400}
             alt={images[0].caption || projectName}
             data-ai-hint={mainImage.imageHint}
-            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            className="h-full w-full object-containtransition-transform duration-300 hover:scale-105"
           />
         </div>
       )}
@@ -110,7 +110,7 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
               height={200}
               alt={img.caption || `${projectName} - ${img.index}`}
               data-ai-hint={img.data.imageHint}
-              className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+              className="h-full w-full object-scale-down transition-transform duration-300 hover:scale-105"
             />
           </div>
         )

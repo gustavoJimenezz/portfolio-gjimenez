@@ -15,32 +15,75 @@ type Project = {
 const projectData: Project[] = [
   {
     name: "Proyecto Final Colaborativo",
-    description: "Proyecto Final de curso desarrollado en colaboración, que culmina la aplicación de un stack completo de tecnologías. Demuestra trabajo en equipo (Git/GitHub) e integración de módulos.",
-    techStack: ["Node.js", "React", "Git", "GitHub", "TypeScript"],
+    description: "Desarrollo colaborativo de una plataforma escalable para gimnasios, presentada como tesina final ante clientes y evaluadores. Mi contribución se centró en la arquitectura Backend (Express/TypeScript), la normalización de la base de datos con más de 20 modelos y el despliegue en producción. El sistema implementa una estructura multi-dominio que separa el sitio público de un dashboard administrativo para el control total de datos. El proyecto integró un ciclo de vida profesional incluyendo Actas de Constitución, Auditoría Ética y gestión de hitos.",
+    techStack: [
+      "React 19",
+      "Node.js",
+      "TypeScript",
+      "Docker Compose",
+      "Nginx & SSL",
+      "GitHub Actions"
+    ],
     githubRepoUrl: "https://activafitness.com.ar/",
-    images: [{ id: 'activa-fitness' }],
+    images: [{ id: 'activa-fitness' }, { id: 'activa-fitness-2' }, { id: 'activa-fitness-3' }],
   },
   {
-    name: "CodoViajero 2.0: Módulo Backend",
-    description: "Versión avanzada del backend en Node.js, centrada en la optimización de las APIs, la lógica de negocio y la eficiencia de las consultas a la base de datos.",
-    techStack: ["Node.js", "Express", "MySQL", "Sequelize"],
+    name: "CodoViajero 2.0",
+    description: "Evolución profesional de la agencia de viajes implementando una arquitectura MVC completa. Destaca por una gestión avanzada de base de datos relacional mediante Sequelize con 9 tablas, utilizando migraciones para el control de versiones del esquema y seeders para la carga de datos iniciales. Implementa seguridad robusta con JWT, encriptación Bcrypt y renderizado dinámico (SSR) mediante EJS y Tailwind CSS.",
+    techStack: [
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Sequelize ORM",
+      "JWT",
+      "EJS",
+      "Tailwind CSS"
+    ],
     githubRepoUrl: "https://github.com/gustavoJimenezz/codo-a-codo-codoViajero-2.0-nodejs",
     images: [{ id: 'codoViajero-codo-a-codo-2-0' }],
   },
   {
-    name: "Maquetado Web Estático y Responsive",
-    description: "Demostración de habilidades de Diseño Web y Responsive sin dependencias de frameworks complejos. Dominio de HTML5 (semántica) y CSS3 para la creación de diseños atractivos y flexibles.",
-    techStack: ["HTML5", "CSS3"],
-    githubRepoUrl: "https://github.com/gustavoJimenezz/maquteado-web-css-html",
-    images: [{ id: 'maqueta-dave' }],
-  },
-  {
-    name: "Sistema de Reservas Full Stack (Core)",
-    description: "Desarrollo integral de una plataforma de reservas web. Backend con Node.js/Express (MVC, APIs REST, JWT). Base de datos MySQL con Sequelize.",
-    techStack: ["Node.js", "Express", "React", "MySQL", "Sequelize", "APIs REST", "JWT"],
+    name: "CodoViajero:Node.js",
+    description: "Desarrollo Full Stack integral de una plataforma de reservas turísticas. Implementa un backend robusto en Node.js con autenticación basada en sesiones y una arquitectura MVC simplificada. El frontend destaca por un maquetado semántico avanzado con Flexbox/Grid, validaciones de formularios personalizadas en Vanilla JS y optimización de activos para la web. Incluye lógica de persistencia con creación automática de esquemas en MySQL.",
+    techStack: [
+      "Node.js",
+      "Express",
+      "Express-Session",
+      "JavaScript (Vanilla)",
+      "HTML5 Semántico",
+      "CSS3 (Flexbox/Grid)"
+    ],
     githubRepoUrl: "https://github.com/gustavoJimenezz/codo-a-codo-trabajo-practico-integrador-CodoViajero-nodejs",
     images: [{ id: 'codoViajero-codo-a-codo' }],
   },
+  {
+    name: "Modernización Astro 5: Sistema Dave Chappelle",
+    description: "Migración integral de un sitio legacy HTML/CSS 'Arquitectura Semántica (Dave Chappelle)' hacia una arquitectura moderna SSG (Static Site Generation). El proyecto destaca por el uso de 'Agentic Workflows' con Claude Code CLI para la planificación en 10 fases y documentación automatizada. Implementa componentización avanzada, tipado estricto con TypeScript y diseño mobile-first mediante Tailwind CSS v4, logrando una optimización superior de activos y performance.",
+    techStack: [
+      "Astro 5", 
+      "Tailwind CSS v4", 
+      "TypeScript", 
+      "Claude Code CLI", 
+      "Sharp (Image Opt)", 
+      "Conventional Commits"
+    ],
+    githubRepoUrl: "https://github.com/gustavoJimenezz/dwn1dv-jimenez-parcial-_2FINAL-chapelle-migracion-astro",
+    images: [{ id: 'maqueta-dave-astro' }, { id: 'maqueta-dave-astro-responsive' }, { id: 'claude-code-terminal' }],
+  },
+
+  {
+    name: "Arquitectura Semántica (Dave Chappelle)",
+    description: "Colección de proyectos educativos y exámenes parciales enfocados en el dominio de HTML5 semántico y CSS3 puro. Incluye desarrollos con estructuras complejas de más de 6 secciones, maquetación con Flexbox y Grid, y formularios funcionales. Proyectos diseñados bajo estrictos criterios de usabilidad, accesibilidad y organización de directorios, cumpliendo con estándares de anatomía de etiquetas y validación de lenguaje.",
+    techStack: [
+      "HTML5 Semántico", 
+      "CSS3 (Flexbox/Grid)", 
+      "Google Fonts", 
+      "Responsive Design", 
+      "Web Accessibility"
+    ],
+    githubRepoUrl: "https://github.com/gustavoJimenezz/maquteado-web-css-html",
+    images: [{ id: 'maqueta-dave' }],
+  }
 ];
 
 export default function Projects() {
@@ -79,7 +122,7 @@ export default function Projects() {
               {/* Galería de imágenes */}
               {project.images.length > 0 && (
                 <div className="relative w-full lg:w-[45%] p-4 sm:p-5 md:p-6">
-                  <div className="relative rounded-xl overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-primary/10 transition-all duration-500 group-hover:scale-[1.02]">
+                  <div className="relative h-full rounded-xl overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-primary/10 transition-all duration-500 group-hover:scale-[1.02]">
                     <ProjectGallery
                       images={project.images}
                       projectName={project.name}

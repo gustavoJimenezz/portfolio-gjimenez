@@ -2,8 +2,20 @@
   "placeholderImages": [
     {
       "id": "activa-fitness",
-      "description": "Un retrato profesional de Gustavo.",
+      "description": "Una vista previa del proyecto activafitness",
       "imageUrl": "/activa-fitness.png",
+      "imageHint": "activa-fitness"
+    },
+    {
+      "id": "activa-fitness-2",
+      "description": "Una vista previa del proyecto activafitness",
+      "imageUrl": "/activa-fitness-2.png",
+      "imageHint": "activa-fitness"
+    },
+    {
+      "id": "activa-fitness-3",
+      "description": "Una vista previa del proyecto activafitness",
+      "imageUrl": "/activa-fitness-3.png",
       "imageHint": "activa-fitness"
     },
     {
@@ -17,6 +29,24 @@
       "description": "Una vista previa del proyecto de maquetado web.",
       "imageUrl": "/maqueta-dave.png",
       "imageHint": "maqueta-dave"
+    },
+    {
+      "id": "maqueta-dave-astro",
+      "description": "Una vista previa del proyecto de maquetado web.",
+      "imageUrl": "/maqueta-dave-astro.png",
+      "imageHint": "maqueta-dave-astro"
+    },
+    {
+      "id": "maqueta-dave-astro-responsive",
+      "description": "Una vista previa del proyecto de maquetado web.",
+      "imageUrl": "/maqueta-dave-astro-responsive.png",
+      "imageHint": "maqueta-dave-astro-responsive"
+    },
+    {
+      "id": "claude-code-terminal",
+      "description": "Una vista previa del proyecto de maquetado web.",
+      "imageUrl": "/claude-code-terminal.png",
+      "imageHint": "claude-code-terminal.png"
     },
     {
       "id": "codoViajero-codo-a-codo",
