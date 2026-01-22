@@ -122,7 +122,7 @@ export default function Projects() {
               {/* Galería de imágenes */}
               {project.images.length > 0 && (
                 <div className="relative w-full lg:w-[45%] p-4 sm:p-5 md:p-6">
-                  <div className="relative h-full rounded-xl overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-primary/10 transition-all duration-500 group-hover:scale-[1.02]">
+                  <div className="relative ounded-xl overflow-hidden shadow-md group-hover:shadow-lg group-hover:shadow-primary/10 transition-all duration-500 group-hover:scale-[1.02]">
                     <ProjectGallery
                       images={project.images}
                       projectName={project.name}
