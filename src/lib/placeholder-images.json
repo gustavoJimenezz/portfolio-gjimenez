@@ -1,5 +1,11 @@
 {
   "placeholderImages": [
+        {
+      "id": "activa-fitness-dashboard",
+      "description": "Una vista previa del proyecto activafitness",
+      "imageUrl": "/activa-fitness-dashboard.png",
+      "imageHint": "activa-fitness-dashboard"
+    },
     {
       "id": "activa-fitness",
       "description": "Una vista previa del proyecto activafitness",
@@ -7,15 +13,15 @@
       "imageHint": "activa-fitness"
     },
     {
-      "id": "activa-fitness-2",
+      "id": "activa-fitness-UML",
       "description": "Una vista previa del proyecto activafitness",
-      "imageUrl": "/activa-fitness-2.png",
+      "imageUrl": "/activa-fitness-UML.png",
       "imageHint": "activa-fitness"
     },
     {
-      "id": "activa-fitness-3",
+      "id": "activa-fitness-docu-PM",
       "description": "Una vista previa del proyecto activafitness",
-      "imageUrl": "/activa-fitness-3.png",
+      "imageUrl": "/activa-fitness-docu-PM.png",
       "imageHint": "activa-fitness"
     },
     {
@@ -24,6 +30,19 @@
       "imageUrl": "/codoViajero-codo-a-codo-2-0.png",
       "imageHint": "codoViajero-codo-a-codo-2-0"
     },
+        {
+      "id": "codoViajero-codo-a-codo-2-0-excursiones",
+      "description": "Una vista previa del proyecto CodoViajero 2.0",
+      "imageUrl": "/codoViajero-codo-a-codo-2-0-excursiones.png",
+      "imageHint": "codoViajero-codo-a-codo-2-0-excursiones"
+    },
+        {
+      "id": "codoViajero-codo-a-codo-2-0-detail",
+      "description": "Una vista previa del proyecto CodoViajero 2.0",
+      "imageUrl": "/codoViajero-codo-a-codo-2-0-detail.png",
+      "imageHint": "codoViajero-codo-a-codo-2-0-detail"
+    },
+
     {
       "id": "maqueta-dave",
       "description": "Una vista previa del proyecto de maquetado web.",

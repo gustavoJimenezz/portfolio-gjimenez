@@ -37,7 +37,7 @@ const experienceData: Experience[] = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="w-full">
+    <section id="experience" className="w-full flex justify-center">
       <div style={{ animationDelay: '0.3s' }} className="container animate-fade-in px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

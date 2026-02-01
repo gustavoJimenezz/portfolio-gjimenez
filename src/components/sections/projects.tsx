@@ -25,22 +25,28 @@ const projectData: Project[] = [
       "GitHub Actions"
     ],
     githubRepoUrl: "https://activafitness.com.ar/",
-    images: [{ id: 'activa-fitness' }, { id: 'activa-fitness-2' }, { id: 'activa-fitness-3' }],
+    images: [{ id: 'activa-fitness' }, { id: 'activa-fitness-dashboard' }, { id: 'activa-fitness-UML' }, { id: 'activa-fitness-docu-PM' }],
   },
   {
     name: "CodoViajero 2.0",
-    description: "Evolución profesional de la agencia de viajes implementando una arquitectura MVC completa. Destaca por una gestión avanzada de base de datos relacional mediante Sequelize con 9 tablas, utilizando migraciones para el control de versiones del esquema y seeders para la carga de datos iniciales. Implementa seguridad robusta con JWT, encriptación Bcrypt y renderizado dinámico (SSR) mediante EJS y Tailwind CSS.",
+    description: "Evolución del sitio CodoViajero:Node.js arquitectura MVC modular. Implementa una gestión avanzada de base de datos relacional con Sequelize (8 modelos), utilizando migraciones, seeders y patrones como Soft Deletes (Paranoid Mode). Destaca por su seguridad robusta mediante autenticación dual (JWT en cookies HttpOnly y Google OAuth 2.0 con Passport.js), validaciones centralizadas con express-validator y un frontend dinámico renderizado con EJS, Tailwind CSS y Flowbite.",
     techStack: [
       "Node.js",
-      "Express",
+      "Express.js",
       "MySQL",
       "Sequelize ORM",
       "JWT",
+      "Passport.js (OAuth 2.0)",
       "EJS",
-      "Tailwind CSS"
+      "Tailwind CSS & Flowbite",
+      "Express-Validator"
     ],
     githubRepoUrl: "https://github.com/gustavoJimenezz/codo-a-codo-codoViajero-2.0-nodejs",
-    images: [{ id: 'codoViajero-codo-a-codo-2-0' }],
+    images: [
+      { id: 'codoViajero-codo-a-codo-2-0' }, 
+      { id: 'codoViajero-codo-a-codo-2-0-excursiones' }, 
+      { id: 'codoViajero-codo-a-codo-2-0-detail' }
+    ],
   },
   {
     name: "CodoViajero:Node.js",

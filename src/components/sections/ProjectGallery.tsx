@@ -123,6 +123,65 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
     );
   }
 
+    // 2 imágenes: principal 2/3, secundaria 1/3
+  if (images.length === 3) {
+    const mainImage = getImageData(images[0].id);
+    const secondaryImages = images.slice(1, 3).map((img, idx) => ({
+      data: getImageData(img.id),
+      caption: img.caption,
+      index: idx + 1,
+    }));
+    
+    
+    return (
+    <>
+      <div className="grid grid-cols-2 grid-rows-2 gap-2 sm:gap-2 overflow-hidden h-[400px]">
+        {/* Imagen principal: 2 columnas x 2 filas */}
+        {mainImage && (
+          <div className="row-span-3 overflow-hidden rounded-lg cursor-pointer" onClick={() => openLightbox(0)}>
+            <Image
+              src={mainImage.imageUrl}
+              width={600}
+              height={400}
+              alt={images[0].caption || projectName}
+              data-ai-hint={mainImage.imageHint}
+              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            />
+          </div>
+        )}
+        {/* Imágenes secundarias en la columna restante */}
+        {secondaryImages.map((img) => (
+          img.data && (
+            <div
+              key={img.data.id}
+              className="overflow-hidden rounded-lg cursor-pointer"
+              onClick={() => openLightbox(img.index)}
+            >
+              <Image
+                src={img.data.imageUrl}
+                width={300}
+                height={200}
+                alt={img.caption || `${projectName} - ${img.index + 1}`}
+                data-ai-hint={img.data.imageHint}
+                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+          )
+        ))}
+      </div>
+      {allImages.length > 0 && (
+        <ImageLightbox
+          images={allImages}
+          currentIndex={selectedImageIndex}
+          isOpen={lightboxOpen}
+          onClose={closeLightbox}
+          onNavigate={navigateToImage}
+        />
+      )}
+    </>
+    );
+  }
+
   // 3-5 imágenes: grilla 3x2, principal ocupa 2 cols x 2 rows
   const mainImage = getImageData(images[0].id);
   const secondaryImages = images.slice(1, 5).map((img, idx) => ({
@@ -133,10 +192,10 @@ export default function ProjectGallery({ images, projectName }: ProjectGalleryPr
 
   return (
     <>
-      <div className="grid grid-flow-col grid-rows-2 gap-1.5 sm:gap-2 overflow-hidden h-[400px]">
+      <div className="grid grid-cols-2 grid-rows-3 gap-1.5 sm:gap-2 overflow-hidden h-[400px]">
         {/* Imagen principal: 2 columnas x 2 filas */}
         {mainImage && (
-          <div className="row-span-2 overflow-hidden rounded-lg cursor-pointer" onClick={() => openLightbox(0)}>
+          <div className="row-span-3 overflow-hidden rounded-lg cursor-pointer" onClick={() => openLightbox(0)}>
             <Image
               src={mainImage.imageUrl}
               width={600}
