@@ -1,7 +1,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FileDown } from 'lucide-react';
 
 const contactInfo = [
+    {
+        icon: FileDown,
+        title: "Curriculum",
+        text: "Descargar CV",
+        href: "/pdf/jimenezCV2025-v02.pdf",
+        download: true,
+    },
     {
         icon: Mail,
         title: "Email",
@@ -19,7 +26,7 @@ const contactInfo = [
         title: "GitHub",
         text: "gustavoJimenezz",
         href: "https://github.com/gustavoJimenezz",
-    }
+    },
 ];
 
 export default function Footer() {
@@ -34,7 +41,7 @@ export default function Footer() {
             Estoy disponible para oportunidades de freelance o para unirme a tu equipo. Si tienes un proyecto en mente, una pregunta o simplemente quieres saludar, no dudes en contactarme.
           </p>
         </div>
-        <div className="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {contactInfo.map((info) => (
                 <Card key={info.title} className="text-center transition-transform duration-300 hover:scale-105 hover:shadow-lg">
                     <CardHeader className="items-center">
@@ -44,7 +51,13 @@ export default function Footer() {
                     </CardHeader>
                     <CardContent>
                         <CardTitle className="mb-2 text-xl font-headline">{info.title}</CardTitle>
-                        <a href={info.href} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary break-all">
+                        <a
+                            href={info.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted-foreground hover:text-primary break-all"
+                            {...('download' in info && info.download ? { download: true } : {})}
+                        >
                             {info.text}
                         </a>
                     </CardContent>
