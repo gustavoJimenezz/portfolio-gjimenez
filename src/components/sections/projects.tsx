@@ -15,7 +15,7 @@ type Project = {
 const projectData: Project[] = [
   {
     name: "Proyecto Final Colaborativo",
-    description: "Desarrollo colaborativo de una plataforma escalable para gimnasios, presentada como tesina final ante clientes y evaluadores. Mi contribución se centró en la arquitectura Backend (Express/TypeScript), la normalización de la base de datos con más de 20 modelos y el despliegue en producción. El sistema implementa una estructura multi-dominio que separa el sitio público de un dashboard administrativo para el control total de datos. El proyecto integró un ciclo de vida profesional incluyendo Actas de Constitución, Auditoría Ética y gestión de hitos.",
+    description: "Desarrollo colaborativo de una plataforma escalable para gimnasios, presentada como tesina final ante clientes y evaluadores. El proyecto incluyó la definición de la arquitectura Backend (Express/TypeScript), la normalización de una base de datos con más de 20 modelos y el despliegue en producción. El sistema implementa una estructura multi-dominio que separa el sitio público de un dashboard administrativo para el control total de datos. Además, se trabajó con un ciclo de vida profesional incluyendo Actas de Constitución, Auditoría Ética y gestión de hitos.",
     techStack: [
       "React 19",
       "Node.js",
