@@ -2,7 +2,7 @@ import { Badge } from '@/src/components/ui/badge';
 import { Code, Globe, Layers, Server, BrainCircuit, Zap } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
-type ColorTheme = 'primary' | 'blue' | 'cyan' | 'orange' | 'purple' | 'pink';
+type ColorTheme = 'accent' | 'muted';
 
 type SkillCategory = {
   title: string;
@@ -12,73 +12,53 @@ type SkillCategory = {
 };
 
 const colorClasses: Record<ColorTheme, { icon: string; badge: string; row: string }> = {
-  primary: {
+  accent: {
     icon: 'text-primary',
     badge: 'border-primary/40 text-primary hover:bg-primary/10',
     row: 'hover:bg-primary/5',
   },
-  blue: {
-    icon: 'text-blue',
-    badge: 'border-blue/40 text-blue hover:bg-blue/10',
-    row: 'hover:bg-blue/5',
+  muted: {
+    icon: 'text-muted-foreground',
+    badge: 'border-border text-muted-foreground hover:bg-muted/60',
+    row: 'hover:bg-muted/30',
   },
-  cyan: {
-    icon: 'text-cyan',
-    badge: 'border-cyan/40 text-cyan hover:bg-cyan/10',
-    row: 'hover:bg-cyan/5',
-  },
-  orange: {
-    icon: 'text-orange',
-    badge: 'border-orange/40 text-orange hover:bg-orange/10',
-    row: 'hover:bg-orange/5',
-  },
-  purple: {
-  icon: 'text-purple',
-  badge: 'border-purple/40 text-purple hover:bg-purple/10',
-  row: 'hover:bg-purple/5',
-  },
-  pink: {
-  icon: 'text-pink',
-  badge: 'border-pink/40 text-pink hover:bg-pink/10',
-  row: 'hover:bg-pink/5',
-  }
 };
 
 const skillData: SkillCategory[] = [
   {
     title: 'Backend & Core Engineering',
     icon: Code,
-    colorTheme: 'primary',
+    colorTheme: 'accent',
     skills: ["Python (Asyncio, Flask, Django)", "Node.js (TypeScript/Express)", "SQLAlchemy & Sequelize ORM", "Java (POO & Design Patterns)"],
   },
   {
     title: 'Arquitectura & Seguridad',
     icon: Server,
-    colorTheme: 'blue',
+    colorTheme: 'muted',
     skills: ["Arquitecturas en Capas (DAO/MVC)", "Diseño de Base de Datos (+20 modelos)", "Seguridad (JWT, Bcrypt, OAuth2)", "Integración de Pagos (Mercado Pago SDK)"],
   },
   {
     title: 'Modern Frontend',
     icon: Globe,
-    colorTheme: 'cyan',
+    colorTheme: 'accent',
     skills: ["React 19", "Astro 5 (SSG/Hybrid)", "Tailwind CSS v4", "TypeScript (Interfaces & Types)", "Mobile-first Design"],
   },
   {
     title: 'Infraestructura & DevOps',
     icon: Layers,
-    colorTheme: 'orange',
+    colorTheme: 'muted',
     skills: ["Docker & Docker Compose", "Nginx (Proxy Reverso & SSL)", "AWS EC2 & Linux Admin", "CI/CD (GitHub Actions)", "Automatización con Bash"],
   },
   {
     title: 'IA & Eficiencia de Desarrollo',
     icon: Zap,
-    colorTheme: 'purple',
+    colorTheme: 'accent',
     skills: ["Claude Code CLI (Agentic workflows)", "Prompt Engineering profesional", "Contexto persistente (CLAUDE.md)", "Documentación Automática"],
   },
   {
     title: 'Calidad & Metodologías',
     icon: BrainCircuit,
-    colorTheme: 'pink',
+    colorTheme: 'muted',
     skills: ["TDD (Pytest/Jest)", "Scrum", "Git (Conventional Commits)", "Clean Code", "Arquitectura dirigida por planes"],
   },
 ];
