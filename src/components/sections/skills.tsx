@@ -35,7 +35,7 @@ const skillData: SkillCategory[] = [
     title: 'Arquitectura & Seguridad',
     icon: Server,
     colorTheme: 'muted',
-    skills: ["Arquitecturas en Capas (DAO/MVC)", "Diseño de Base de Datos (+20 modelos)", "Seguridad (JWT, Bcrypt, OAuth2)", "Integración de Pagos (Mercado Pago SDK)"],
+    skills: ["Arquitecturas en Capas (DAO/MVC)", "Diseño de BD Relacionales", "Seguridad (JWT, Bcrypt, OAuth2)", "Optimización de Rendimiento", "Escalabilidad y Mantenimiento"],
   },
   {
     title: 'Modern Frontend',
@@ -47,7 +47,7 @@ const skillData: SkillCategory[] = [
     title: 'Infraestructura & DevOps',
     icon: Layers,
     colorTheme: 'muted',
-    skills: ["Docker & Docker Compose", "Nginx (Proxy Reverso & SSL)", "AWS EC2 & Linux Admin", "CI/CD (GitHub Actions)", "Automatización con Bash"],
+    skills: ["Docker & Docker Compose", "Nginx (Proxy Reverso & SSL)", "AWS EC2", "CI/CD (GitHub Actions)", "Automatización con Bash", "Google Cloud Platform: (GCP)", "GCP: Data Engineering for ML", "GCP: Cloud Networking & Security", "GCP: Load Balancing & Traffic", "GCP: Google Cloud Core Architecture"],
   },
   {
     title: 'IA & Eficiencia de Desarrollo',
@@ -59,7 +59,7 @@ const skillData: SkillCategory[] = [
     title: 'Calidad & Metodologías',
     icon: BrainCircuit,
     colorTheme: 'muted',
-    skills: ["TDD (Pytest/Jest)", "Scrum", "Git (Conventional Commits)", "Clean Code", "Arquitectura dirigida por planes"],
+    skills: ["TDD (Pytest/Jest)", "Scrum", "Git (Conventional Commits)", "Clean Code", "Ciclo de Desarrollo End-to-End"],
   },
 ];
 

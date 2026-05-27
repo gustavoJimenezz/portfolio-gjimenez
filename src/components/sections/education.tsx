@@ -18,6 +18,13 @@ const educationData: EducationItem[] = [
     type: 'degree',
   },
   {
+    title: "Google Cloud Computing Foundations",
+    institution: "Google Cloud Skills Boost",
+    period: "2026",
+    description: "Especialización en arquitectura e infraestructura cloud. Implementación de soluciones utilizando servicios de Google Cloud (GCP), incluyendo despliegue de entornos de desarrollo, configuración de redes seguras, balanceo de carga en Compute Engine y pipelines de preparación de datos para APIs de Machine Learning.",
+    type: 'course',
+  },
+  {
     title: "Node.js – Codo a Codo",
     institution: "Govierno de la Ciudad de Buenos Aires",
     period: "2024",

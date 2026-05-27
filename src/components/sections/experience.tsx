@@ -23,16 +23,6 @@ const experienceData: Experience[] = [
       "Trabajo bajo metodologías ágiles (Scrum) y herramientas de gestión como Jira, GitHub/GitLab y Postman"
     ]
   },
-  {
-    role: "Operador y Diseñador Gráfico",
-    company: "Taller de Estampado Textil (Trabajo Independiente)",
-    period: "Dic. 2023 – Actualidad",
-    description: [
-      "Diseño, edición y preparación de artes finales para impresión textil (DTF, vinilo y serigrafía).",
-      "Manejo de Adobe Illustrator y Photoshop para la creación y ajuste de gráficos.",
-      "Operación de maquinaria y procesos de serigrafía en producción textil."
-    ]
-  }
 ];
 
 export default function Experience() {
@@ -50,13 +40,14 @@ export default function Experience() {
 
           {experienceData.map((exp, index) => (
             <div key={exp.company} className={`mb-8 flex items-center w-full ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
-              <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
-                 <Card className="relative">
-                   {/* Timeline Dot */}
-                   <div className="absolute left-1/2 top-6 h-4 w-4 -translate-x-1/2 transform rounded-full bg-primary ring-8 ring-background lg:left-auto lg:right-auto lg:-translate-x-0 lg:-translate-y-0"
+              {/* <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
+              </div> */}
+                <Card className="relative">
+                  {/* Timeline Dot */}
+                  {/* <div className="absolute left-1/2 top-6 h-4 w-4 -translate-x-1/2 transform rounded-full bg-primary ring-8 ring-background lg:left-auto lg:right-auto lg:-translate-x-0 lg:-translate-y-0"
                     style={index % 2 === 0 ? { right: '-2rem', left: 'auto' } : { left: '-2rem' }}
-                   ></div>
-                   <CardHeader>
+                   ></div> */}
+                  <CardHeader>
                     <div className="flex items-center gap-4">
                       <div className="rounded-full bg-primary/10 p-2">
                         <Briefcase className="h-6 w-6 text-primary" />
@@ -66,16 +57,24 @@ export default function Experience() {
                         <CardDescription>{exp.company} | {exp.period}</CardDescription>
                       </div>
                     </div>
-                   </CardHeader>
-                   <CardContent>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="grid grid-cols-2 gap-4 p-2 list-disc">
+                      {exp.description.map((item, i) => (
+                        <li key={i} className="text-sm text-muted-foreground">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  {/* <CardContent>
                     <ul className="list-disc pl-5 space-y-2">
                       {exp.description.map((item, i) => (
                         <li key={i} className="text-sm text-muted-foreground">{item}</li>
                       ))}
                     </ul>
-                   </CardContent>
-                 </Card>
-              </div>
+                  </CardContent> */}
+                </Card>
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ const contactInfo = [
         icon: FileDown,
         title: "Curriculum",
         text: "Descargar CV",
-        href: "/pdf/jimenezCV2025-v02.pdf",
+        href: "/pdf/gjimenezCV2026.pdf",
         download: true,
     },
     {
